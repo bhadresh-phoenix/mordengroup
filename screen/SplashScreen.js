@@ -15,15 +15,15 @@ const SplashScreen = () => {
         setTimeout(() => {
             hideSplashScreen()
             navigation.navigate('WebViewScreen')
-        }, 2000)
+        }, 14000)
     }, [])
 
     const renderSplash = () => {
         return (
-            <View style={{backgroundColor: '#FFFFFF'}}>
+            <View style={{backgroundColor: 'rgba(248,245,250,255)'}}>
                 <View>
-                    <Image  source={require('./image/splash.png')}
-                    style={{width: '100%', height: '100%', resizeMode: 'contain'}}
+                    <Image  source={require('./image/modernSplash.gif')}
+                    style={{width: '100%', height: '100%', resizeMode: 'cover'}}
                     />
                 </View>
             </View>
